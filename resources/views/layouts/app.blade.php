@@ -19,7 +19,7 @@
 
 <body>
     <div class="wrapper">
-        <header>
+        <!-- <header>
             <nav class="navbar navbar-light bg-light">
                 <div class="container">
                     <a href="{{ route('posts.index') }}" class="navbar-brand">投稿アプリ</a>
@@ -34,16 +34,18 @@
                     </ul>
                 </div>
             </nav>
-        </header>
+        </header> -->
+        @include('layouts.header')
         <main>
             <div class="container">
                 <h1 class="fs-2 my-3">@yield('title')</h1>
                 @yield('content')
             </div>
         </main>
-        <footer class="d-flex justify-content-center align-items-center bg-light">
+        <!-- <footer class="d-flex justify-content-center align-items-center bg-light">
             <p class="text-muted small mb-0">&copy; 投稿アプリ All rights reserved.</p>
-        </footer>
+        </footer> -->
+        @include('layouts.footer')
     </div>
     {{-- bootstrap --}}
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
